@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=[-5,3,9,-22,132,36,25,0];
+    let index=0;
+    let max=a[0];
+    let total=a[0];
+    for(let i=1;i<a.length;i++) {
+        total=total+a[i];
+        if (a[i]>max){
+            max=a[i];
+            index=i;
+        }
+    }
+    document.write("Phần tử lớn nhất là "+max+" ở vị trí "+index+"<br/>");
+    document.write("Trung bình các phần tử trong mảng = "+total/a.length);
+
+</script>
+</body>
+</html>

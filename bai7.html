@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Nhập dãy có 10 phần tử
+    let element;
+    let a=new Array();
+    alert("Mời nhập vào 5 phần tử là số nguyên của mảng :")
+    for (let i=1;i<=5;i++) {
+        element=parseInt(prompt("Mời nhập vào phần tử thứ "+i));
+        a.push(element);
+    }
+    let binh;
+    let max;
+    for (i=0;i<5;i++) {
+        max=a[i];
+        if (a[i+1]>max) {
+            binh=a[i];
+            a[i]=a[i+1];
+            a[i+1]=binh;
+            max=a[i+1];
+        }
+    }
+    alert(a);
+
+</script>
+</body>
+</html>
